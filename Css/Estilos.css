@@ -1,0 +1,297 @@
+/* Estilos Globales */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  background: #fafafa;
+}
+
+/* Estilos Globales FIN*/
+
+/* Clases de FullPage.js */
+
+#fp-nav ul li a span {
+  background: #1fdd5f;
+}
+
+#fp-nav ul li .fp-tooltip {
+  color: black;
+}
+
+/* Clases de FullPage.js FIN */
+
+/* Menu De Navegacion */
+
+.nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+
+  background: -moz-linear-gradient(
+    left,
+    rgba(19, 161, 140, 1) 0%,
+    rgba(19, 161, 139, 1) 51%,
+    rgba(31, 221, 94, 1) 74%,
+    rgba(31, 221, 94, 1) 92%,
+    rgba(31, 221, 94, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(19, 161, 140, 1)),
+    color-stop(51%, rgba(19, 161, 139, 1)),
+    color-stop(74%, rgba(31, 221, 94, 1)),
+    color-stop(92%, rgba(31, 221, 94, 1)),
+    color-stop(100%, rgba(31, 221, 94, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(19, 161, 140, 1) 0%,
+    rgba(19, 161, 139, 1) 51%,
+    rgba(31, 221, 94, 1) 74%,
+    rgba(31, 221, 94, 1) 92%,
+    rgba(31, 221, 94, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(19, 161, 140, 1) 0%,
+    rgba(19, 161, 139, 1) 51%,
+    rgba(31, 221, 94, 1) 74%,
+    rgba(31, 221, 94, 1) 92%,
+    rgba(31, 221, 94, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(19, 161, 140, 1) 0%,
+    rgba(19, 161, 139, 1) 51%,
+    rgba(31, 221, 94, 1) 74%,
+    rgba(31, 221, 94, 1) 92%,
+    rgba(31, 221, 94, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(19, 161, 140, 1) 0%,
+    rgba(19, 161, 139, 1) 51%,
+    rgba(31, 221, 94, 1) 74%,
+    rgba(31, 221, 94, 1) 92%,
+    rgba(31, 221, 94, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13a18c', endColorstr='#1fdd5e', GradientType=1 );
+}
+
+.nav li,
+.nav a {
+  display: inline-block;
+  margin: 0 5px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  transition: 0.5 ease;
+  font-size: 17px;
+}
+
+.nav li.active {
+  border-bottom: 2px solid white;
+}
+
+/* Menu De Navegacion FIN */
+
+/* Pagina Principal */
+.contenedor-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 85vw;
+  width: 90%;
+  margin: auto;
+}
+
+.contenedor-titulo {
+  margin-left: 15px;
+}
+
+.hero-imageContainer {
+  max-width: 28.125em;
+}
+
+.btn {
+  padding: 10px 25px;
+  background-color: #1fdd5f;
+  border-color: #1fdd5f;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.btn:hover {
+  background-color: #13a18b;
+  border-color: #13a18b;
+  color: white;
+}
+
+.hero-main {
+  font-size: 3.75em;
+  font-weight: 700;
+}
+.hero-emblem {
+  margin: 10px 0px;
+  font-size: 1.25em;
+  font-weight: 300;
+  margin-bottom: 2.5em;
+}
+
+.header .contenedor-icono {
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  font-size: 50px;
+  animation: bajar-subir 1s ease infinite;
+}
+
+.header .contenedor-icono a {
+  color: #1fdd5f;
+}
+
+/* Animacion Inicial */
+
+@keyframes bajar-subir {
+  0% {
+    transform: translateY(20px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+/* Animacion Inicial FIN */
+
+/* Pagina principal FIN */
+
+/* Pagina de Servicios */
+
+.servicios article {
+  background-position: center;
+  background-size: cover;
+}
+
+.servicios article:nth-child(1) {
+  background-image: url(../Image/implantes.jpg);
+}
+.servicios article:nth-child(2) {
+  background-image: url(../Image/ortodoncia.jpg);
+}
+.servicios article:nth-child(3) {
+  background-image: url(../Image/Implements.jpg);
+}
+
+/* Pagina de Servicios FIN */
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  .contenedor-hero {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .hero-imageContainer img {
+    width: 22.5em;
+    margin-right: -1.75em;
+  }
+
+  .hero-main {
+    margin-left: 0;
+  }
+
+  .header .contenedor-icono {
+    bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 1037px) {
+  .hero-main {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 1056px) {
+  .hero-imageContainer {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .hero-emblem {
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .hero-main {
+    margin-top: 1.25em;
+  }
+
+  .hero-imageContainer img {
+    width: 300px;
+    margin-top: 1.25em;
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 757px) {
+  .contenedor-hero {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-main {
+    margin-top: 0px;
+  }
+
+  .hero-imageContainer img {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  header .contenedor-icono {
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+  }
+  .header .contenedor-icono {
+    text-align: center;
+    left: 48.7%;
+    bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 406px) {
+  .hero-main {
+    font-size: 35px;
+  }
+
+  .hero-emblem {
+    font-size: 18px;
+  }
+
+  .header .contenedor-icono {
+    left: 47%;
+  }
+}
