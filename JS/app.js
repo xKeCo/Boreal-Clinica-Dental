@@ -9,7 +9,7 @@ const secciones = new fullpage("#fullpage", {
   loopBottom: false,
   navigation: true,
   menu: "#menu",
-  anchors: ["Inicio", "Personal", "Servicios", "contacto"],
+  anchors: ["inicio", "Personal", "Servicios", "contacto"],
   navigationTooltips: ["Inicio", "Personal", "Servicios", "Contacto"],
   showActiveTooltip: false,
   sectionsColor: ["#fafafa", "#000", "#fafafa", "#fafafa"],
