@@ -5,7 +5,6 @@ const secciones = new fullpage("#fullpage", {
   easing: "easeInOutCubic",
   scrollingSpeed: 600,
   css3: true,
-  offsetSections: true,
   easingcss3: "ease-out",
   loopBottom: false,
   navigation: true,
