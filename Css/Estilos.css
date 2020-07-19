@@ -401,6 +401,131 @@ body {
 
 /* Pagina de logros FIN */
 
+/* Pagina de Contacto */
+
+.footer {
+  max-height: 100vh;
+}
+
+.contact-container {
+  max-width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  height: 45vh;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.contact-details h3 {
+  margin-top: 10px;
+  font-weight: 600;
+  color: white;
+}
+
+.contact-details h1 {
+  margin-top: 10px;
+  font-weight: 700;
+  color: white;
+}
+.contact-details h3 a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+.contact-details h3 span {
+  font-weight: 400;
+  color: white;
+}
+
+.contact-details h3 a:hover {
+  color: #00bb2d;
+}
+
+.e-mail::after {
+  content: "borealclinicadental@hotmail.com";
+  font-weight: 400;
+}
+
+.container-contact-Links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 40%;
+  font-size: 50px;
+}
+
+.footer .container-contact-Links a {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  color: #30313a;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  margin: 0 20px;
+}
+
+.footer .facebook i {
+  color: #3b5998;
+}
+.footer .ig i {
+  color: #c13584;
+}
+.footer .wpp i {
+  color: #00bb2d;
+}
+
+.footer .facebook:hover {
+  background: #3b5998;
+}
+.footer .ig:hover {
+  background: #c13584;
+}
+.footer .wpp:hover {
+  background: #00bb2d;
+}
+
+.footer .facebook:hover i {
+  color: #fff;
+}
+.footer .ig:hover i {
+  color: #fff;
+}
+.footer .wpp:hover i {
+  color: #fff;
+}
+
+.Ubicacion {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 50px;
+}
+
+.mapa-container {
+  /* margin: auto; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.mapa {
+  width: 100vw;
+  height: 60vh;
+}
+
+/* Pagina de Contacto FIN */
+
 /* Media Queries */
 
 @media (max-width: 1402px) {
@@ -418,6 +543,32 @@ body {
 
   .servicios .descripcion {
     font-size: 16px;
+  }
+
+  .contact-details h1 {
+    font-size: 25px;
+  }
+
+  .contact-details h3 {
+    font-size: 16px;
+  }
+
+  .contact-details h3 a {
+    font-size: 16px;
+  }
+  .contact-details h3 span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container-contact-Links {
+    font-size: 40px;
+  }
+
+  .footer .container-contact-Links a {
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -464,6 +615,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1092px) {
+  .container-contact-Links {
+    width: unset;
+  }
+}
+
 @media screen and (max-width: 1037px) {
   .hero-main {
     font-size: 45px;
@@ -487,6 +644,13 @@ body {
 
   .servicios .descripcion {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 971px) {
+  .contact-details {
+    justify-content: flex-start;
+    width: 50%;
   }
 }
 
@@ -518,6 +682,13 @@ body {
   }
 }
 
+@media screen and (max-width: 948px) {
+  .contact-details {
+    justify-content: center;
+    width: 85%;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 845px) {
   .hero-emblem {
     margin-bottom: 25px;
@@ -538,6 +709,12 @@ body {
     margin-right: 0px;
   }
 }
+@media screen and (max-width: 777px) {
+  .contact-details {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 758px) {
   .contenedor {
     justify-content: center;
@@ -592,6 +769,40 @@ body {
   }
   .fp-controlArrow.fp-next {
     right: 40%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .contact-details h1 {
+    font-size: 20px;
+  }
+
+  .contact-details h3 {
+    font-size: 14px;
+  }
+
+  .contact-details h3 a {
+    font-size: 14px;
+  }
+  .contact-details h3 span {
+    font-size: 14px;
+  }
+
+  .container-contact-Links {
+    font-size: 30px;
+  }
+
+  .footer .container-contact-Links a {
+    width: 60px;
+    height: 60px;
+  }
+
+  .contact-container {
+    height: 40vh;
+  }
+
+  .Ubicacion {
+    font-size: 30px;
   }
 }
 

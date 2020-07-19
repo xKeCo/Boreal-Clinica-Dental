@@ -230,3 +230,10 @@ h2 {
     padding: 12px 18px;
   }
 }
+
+@media screen and (max-width: 383px) {
+  .nav li,
+  .nav a {
+    font-size: 12px;
+  }
+}
