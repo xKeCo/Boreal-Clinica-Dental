@@ -1,6 +1,6 @@
 # Boreal Clinica Dental
 
-available on: [www.borealclinicadental.com](https://www.borealclinicadental.com/)
+Available on: [www.borealclinicadental.com](https://www.borealclinicadental.com/)
 
 ![Repository image](Image/Repository-Img/ReadMe-Image.png)
 
