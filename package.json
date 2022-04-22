@@ -9,6 +9,6 @@
   "author": "Kevin Collazos",
   "license": "MIT",
   "dependencies": {
-    "fullpage.js": "^3.0.9"
+    "fullpage.js": "^4.0.5"
   }
 }
